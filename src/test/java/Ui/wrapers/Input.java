@@ -16,7 +16,7 @@ public class Input {
     }
 
     public LoginPage fill(String text) {
-        input.sendKeys(text);
+        input.scrollIntoView(true).sendKeys(text);
         return new LoginPage();
     }
 

@@ -1,10 +1,12 @@
-package Ui.conctants.enums.NewAccountsPage;
+package Ui.conctants.enums.newAccountPage;
 
 import org.openqa.selenium.By;
 
+/**
+ * enum полей для ввода данных NewAccountPage, найденных по локатору
+ */
 public enum NewAccountPageInputLocators {
-
-    ACCOUNT_NAME("Account name"),
+    ACCOUNT_NAME("Account Name"),
     PHONE("Phone"),
     FAX("Fax"),
     WEBSITE("Website"),

@@ -1,7 +1,10 @@
 package Ui.pages;
 
 import Ui.pages.accountsPage.AccountsPage;
+import Ui.pages.contactsPage.ContactsPage;
+import Ui.pages.leadsPage.LeadsPage;
 import com.codeborne.selenide.*;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 import java.time.Duration;
@@ -31,6 +34,7 @@ public class AppNavBar {
         }
     }
 
+    @Step("Go to accounts page")
     public AccountsPage goToAccountsPage() {
         for (NavItem el:navItems){
             if (el.getText().equals("Accounts")){
@@ -42,6 +46,7 @@ public class AppNavBar {
 
     }
 
+    @Step("Go to contacts page")
     public ContactsPage goToContactPage() {
         for (NavItem el:navItems){
             if(el.getText().equals("Contacts")){
@@ -52,6 +57,7 @@ public class AppNavBar {
         return new ContactsPage();
     }
 
+    @Step("Go to leads page")
     public LeadsPage goToLeadsPage(){
         for (NavItem el:navItems){
             if(el.getText().equals("Leads")){

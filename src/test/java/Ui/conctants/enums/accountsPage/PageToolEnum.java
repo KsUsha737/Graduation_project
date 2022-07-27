@@ -1,5 +1,8 @@
 package Ui.conctants.enums.accountsPage;
 
+/**
+ * enum для выбора действия на AccountsPage
+ */
 public enum PageToolEnum {
     NEW("New"),
     IMPORT("Import");

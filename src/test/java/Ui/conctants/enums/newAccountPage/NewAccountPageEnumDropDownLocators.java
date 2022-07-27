@@ -1,9 +1,12 @@
-package Ui.conctants.enums.NewAccountsPage;
+package Ui.conctants.enums.newAccountPage;
 
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
 
+/**
+ * enum дропдаунов  NewAccountPage, найденных по локатору
+ */
 public enum NewAccountPageEnumDropDownLocators {
 
     RATING("Rating"),

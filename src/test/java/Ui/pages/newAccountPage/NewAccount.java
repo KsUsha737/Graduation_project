@@ -1,6 +1,6 @@
 package Ui.pages.newAccountPage;
 
-import Ui.conctants.enums.NewAccountsPage.NewAccountPageEnumDropDownLocators;
+import Ui.conctants.enums.newAccountPage.*;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import lombok.*;
@@ -14,78 +14,86 @@ import lombok.*;
 public class NewAccount {
     @Expose
     @SerializedName("Account Name")
-    String accountName;
+    private String accountName;
     @Expose
     @SerializedName("Phone")
-    String phone;
+    private String phone;
     @Expose
     @SerializedName("Fax")
-    String fax;
+    private String fax;
     @Expose
     @SerializedName("Website")
-    String website;
+    private String website;
     @Expose
     @SerializedName("Account Number")
-    String accountNumber;
+    private String accountNumber;
     @Expose
     @SerializedName("Account Site")
-    String accountSite;
+    private String accountSite;
     @Expose
     @SerializedName("Ticker Symbol")
-    String tickerSymbol;
+    private String tickerSymbol;
     @Expose
     @SerializedName("Employees")
-    String employees;
+    private String employees;
     @Expose
     @SerializedName("Annual Revenue")
-    String annualRevenue;
+    private String annualRevenue;
     @Expose
     @SerializedName("SIC Code")
-    String SICCode;
+    private String sICCode;
     @Expose
     @SerializedName("Billing City")
-    String BillingCity;
+    private String billingCity;
     @Expose
     @SerializedName("Billing State/Province")
-    String BillingStateProvince;
+    private String billingStateProvince;
     @Expose
     @SerializedName("Shipping City")
-    String ShippingCity;
+    private String shippingCity;
     @Expose
     @SerializedName("Shipping State/Province")
-    String ShippingStateProvince;
+    private String shippingStateProvince;
     @Expose
     @SerializedName("Billing Zip/Postal Code")
-    String BillingZipPostalCode;
+    private String billingZipPostalCode;
     @Expose
     @SerializedName("Billing Country")
-    String BillingCountry;
+    private String billingCountry;
     @Expose
     @SerializedName("Shipping Zip/Postal Code")
-    String ShippingZipPostalCode;
+    private String shippingZipPostalCode;
     @Expose
     @SerializedName("Shipping Country")
-    String ShippingCountry;
+    private String shippingCountry;
     @Expose
     @SerializedName("SLA Serial Number")
-    String SLASerialNumber;
+    private String sLASerialNumber;
     @Expose
     @SerializedName("Number of Locations")
-    String NumberOfLocations;
+    private String numberOfLocations;
     @Expose
-    NewAccountPageEnumDropDownLocators rating;
+    @SerializedName("Rating")
+    private NewAccountPageRatingEnum rating;
     @Expose
-    NewAccountPageEnumDropDownLocators type;
+    @SerializedName("Type")
+    private NewAccountPageTypeEnum type;
     @Expose
-    NewAccountPageEnumDropDownLocators ownership;
+    @SerializedName("Ownership")
+    private NewAccountPageOwnershipEnum ownership;
     @Expose
-    NewAccountPageEnumDropDownLocators industry;
+    @SerializedName("Industry")
+    private NewAccountPageIndustryEnum industry;
     @Expose
-    NewAccountPageEnumDropDownLocators customerPriority;
+    @SerializedName("Customer Priority")
+    private NewAccountPageCustomerPriorityEnum customerPriority;
     @Expose
-    NewAccountPageEnumDropDownLocators sLA;
+    @SerializedName("SLA")
+    private NewAccountPageSlaEnum sLA;
     @Expose
-    NewAccountPageEnumDropDownLocators upsellOpportunity;
+    @SerializedName("Upsell Opportunity")
+    private NewAccountPageUpsellOpportunityEnum upsellOpportunity;
     @Expose
-    NewAccountPageEnumDropDownLocators active;
+    @SerializedName("Active")
+    private NewAccountPageActiveEnum active;
 }

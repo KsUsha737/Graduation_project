@@ -1,5 +1,6 @@
 package Ui.wrapers;
 
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 
@@ -10,8 +11,12 @@ public class Button {
     public Button (By locator){
         button=$(locator);
     }
+    public Button (By locator, SelenideElement element){
 
-    public void Click (){
+        button=element.$(locator);
+    }
+
+    public void click(){
         button.click();
     }
 }

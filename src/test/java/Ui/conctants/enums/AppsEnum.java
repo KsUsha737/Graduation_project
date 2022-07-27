@@ -1,5 +1,9 @@
 package Ui.conctants.enums;
 
+/**
+ * enum приложений Apps
+ */
+
 public enum AppsEnum {
     SERVICE("Service"),
     MARKETING("Marketing"),

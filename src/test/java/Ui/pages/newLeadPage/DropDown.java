@@ -1,32 +1,30 @@
-package Ui.pages.newAccountPage;
+package Ui.pages.newLeadPage;
 
-import Ui.conctants.enums.newAccountPage.NewAccountPageDropdownEnumInterface;
-import Ui.conctants.enums.newAccountPage.NewAccountPageEnumDropDownLocators;
+import Ui.conctants.enums.newLeadePage.NewLeadPageDropdownEnumInterface;
+import Ui.conctants.enums.newLeadePage.NewLeadPageEnumDropDownLocators;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
 
-/**
- * выбор значения полей DropDown из выпадающего списка
- * выбор поля через Enum
- */
+
 public class DropDown {
     private final SelenideElement dropDown;
 
-    public DropDown(NewAccountPageEnumDropDownLocators newAccountPageEnumDropDownLocator) {
-        dropDown = $(newAccountPageEnumDropDownLocator.getLocator()).scrollIntoView(true);
+
+    public DropDown(NewLeadPageEnumDropDownLocators newLeadPageEnumDropDownLocator) {
+        dropDown = $(newLeadPageEnumDropDownLocator.getLocator()).scrollIntoView(true);
     }
 
-    public NewAccountPage select(NewAccountPageDropdownEnumInterface ratingEnum) {
+    public NewLeadPage select(NewLeadPageDropdownEnumInterface ratingEnum) {
         dropDown.scrollIntoView(true).click();
         ElementsCollection dropDownElements = dropDown.$$(By.xpath("ancestor::div[contains(@class,'slds-combobox slds-dropdown-trigger')]/div[contains(@class,'slds-listbox')]/lightning-base-combobox-item"));
         for (SelenideElement el : dropDownElements) {
             String title = el.$(By.xpath("span/span[@class='slds-truncate']")).getText();
             if (title.equals(ratingEnum.toString())) {
                 el.click();
-                return new NewAccountPage();
+                return new NewLeadPage();
             }
         }
         return null;
