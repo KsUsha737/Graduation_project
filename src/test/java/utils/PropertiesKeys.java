@@ -11,7 +11,6 @@ public enum PropertiesKeys {
     CONFIGURATION_TIMEOUT ("Configuration.timeout"),
     CONFIGURATION_SCREENSHOTS ("Configuration.screenshots");
 
-
     String key;
     private PropertiesKeys(String key){
         this.key=key;

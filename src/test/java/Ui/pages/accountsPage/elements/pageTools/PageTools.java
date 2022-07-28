@@ -6,11 +6,9 @@ import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-
 import static com.codeborne.selenide.Selenide.$$;
 
 /**

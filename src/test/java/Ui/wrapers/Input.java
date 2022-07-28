@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class Input {
     String text;
-//    String label;
+
     private SelenideElement input;
 
     public Input(By locator) {
@@ -25,6 +25,3 @@ public class Input {
     }
 
 }
-
-
-

@@ -12,13 +12,10 @@ public class AccountsPage extends AppNavBar {
     @Getter
     private TablePage tablePage;
 
-
     public AccountsPage() {
         super();
         pageTools =new PageTools();
         tablePage=new TablePage();
     }
 
-
 }
-

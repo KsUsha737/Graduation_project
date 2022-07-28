@@ -20,5 +20,4 @@ public enum NewAccountPageSlaEnum implements NewAccountPageDropdownEnumInterface
         return text;
     }
 
-
 }

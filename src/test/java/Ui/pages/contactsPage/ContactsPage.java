@@ -7,6 +7,3 @@ import org.openqa.selenium.By;
 public class ContactsPage extends AppNavBar {
 
     }
-
-
-

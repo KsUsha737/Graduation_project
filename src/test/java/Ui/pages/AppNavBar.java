@@ -5,6 +5,7 @@ import Ui.pages.contactsPage.ContactsPage;
 import Ui.pages.leadsPage.LeadsPage;
 import com.codeborne.selenide.*;
 import io.qameta.allure.Step;
+import lombok.extern.log4j.Log4j2;
 import org.openqa.selenium.By;
 
 import java.time.Duration;
@@ -14,7 +15,7 @@ import java.util.Objects;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
-
+@Log4j2
 public class AppNavBar {
     private List<NavItem> navItems;
 
@@ -36,6 +37,7 @@ public class AppNavBar {
 
     @Step("Go to accounts page")
     public AccountsPage goToAccountsPage() {
+        log.info("Go to accounts page");
         for (NavItem el:navItems){
             if (el.getText().equals("Accounts")){
                 el.click();
@@ -48,6 +50,7 @@ public class AppNavBar {
 
     @Step("Go to contacts page")
     public ContactsPage goToContactPage() {
+        log.info("Go to contacts page");
         for (NavItem el:navItems){
             if(el.getText().equals("Contacts")){
                 el.click();
@@ -59,6 +62,7 @@ public class AppNavBar {
 
     @Step("Go to leads page")
     public LeadsPage goToLeadsPage(){
+        log.info("Go to leads page");
         for (NavItem el:navItems){
             if(el.getText().equals("Leads")){
                 el.click();

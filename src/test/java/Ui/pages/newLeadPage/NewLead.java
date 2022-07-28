@@ -88,7 +88,4 @@ public class NewLead {
     @SerializedName("Primary")
     private NewLeadPagePrimaryEnum primary;
 
-
-
-
 }

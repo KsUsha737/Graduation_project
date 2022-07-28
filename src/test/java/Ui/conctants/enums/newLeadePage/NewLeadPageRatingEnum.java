@@ -9,7 +9,6 @@ public enum NewLeadPageRatingEnum implements NewLeadPageDropdownEnumInterface{
     WARM("Warm"),
     COLD("Cold");
 
-
     private String text;
 
     NewLeadPageRatingEnum(String text) {

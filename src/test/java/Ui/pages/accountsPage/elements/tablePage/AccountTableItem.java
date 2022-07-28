@@ -10,7 +10,6 @@ import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
 
-
 @Getter
 public class AccountTableItem {
 
@@ -20,7 +19,6 @@ public class AccountTableItem {
     private String phone;
     private String accountOwnerAlias;
     private Button accountActions;
-
 
     public AccountTableItem(int index, SelenideElement element) {
         this.index = index + 1;
@@ -51,6 +49,5 @@ public class AccountTableItem {
         accountName.Click();
         return new AccountPage();
     }
-
 
 }

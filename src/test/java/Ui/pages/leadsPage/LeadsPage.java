@@ -15,7 +15,4 @@ public class LeadsPage extends AppNavBar {
      pageTools=new PageTools();
 
     }
-
-
-
 }

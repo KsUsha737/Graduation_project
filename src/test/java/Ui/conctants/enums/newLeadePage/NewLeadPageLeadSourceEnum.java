@@ -21,6 +21,4 @@ public enum NewLeadPageLeadSourceEnum implements NewLeadPageDropdownEnumInterfac
     public String toString() {
         return text;
     }
-
-
 }

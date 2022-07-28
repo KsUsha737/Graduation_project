@@ -1,7 +1,8 @@
 package Ui.conctants.enums;
 
 /**
- * enum приложений Apps
+ * enum applications of "Apps"
+ * contains software packages for work in areas
  */
 
 public enum AppsEnum {
