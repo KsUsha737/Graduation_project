@@ -1,7 +1,7 @@
 package Ui.conctants.enums.newAccountPage;
 
 /**
- * enum наименований полей дропдауна "Active" на NewAccountPage
+ * enum dropdown field names "Active" on NewAccountPage
  */
 public enum NewAccountPageActiveEnum implements NewAccountPageDropdownEnumInterface{
     NONE("--None--"),

@@ -1,7 +1,7 @@
 package Ui.conctants.enums.newAccountPage;
 
 /**
- * enum наименований полей дропдауна "Ownership" на NewAccountPage
+ * enum names of dropdown fields "Ownership" on NewAccountPage
  */
 public enum NewAccountPageOwnershipEnum implements NewAccountPageDropdownEnumInterface {
     NONE("--None--"),

@@ -1,9 +1,10 @@
 package Ui.conctants.enums.newAccountPage;
 
+import lombok.Getter;
 import org.openqa.selenium.By;
 
 /**
- * enum полей для ввода данных NewAccountPage, найденных по локатору
+ * enum fields for entering NewAccountPage data found by locator
  */
 public enum NewAccountPageInputLocators {
     ACCOUNT_NAME("Account Name"),
@@ -27,9 +28,12 @@ public enum NewAccountPageInputLocators {
     SLA_SERIAL_NUMBER("SLA Serial Number"),
     NUMBER_OF_LOCATION("Number of Locations");
 
-    public final By locator;
+    private final By locator;
+    @Getter
+    private final String title;
 
     NewAccountPageInputLocators(String title){
+        this.title=title;
         this.locator=By.xpath(String.format("//label[text()='%s']//ancestor::lightning-input/div/input",title));
     }
     public By getLocator(){

@@ -1,7 +1,7 @@
 package Ui.conctants.enums.accountsPage;
 
 /**
- * enum для выбора действия на AccountsPage
+ * enum to select action on AccountsPage
  */
 public enum PageToolEnum {
     NEW("New"),

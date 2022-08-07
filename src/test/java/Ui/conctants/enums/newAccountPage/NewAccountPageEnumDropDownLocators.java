@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.$;
 
 /**
- * enum дропдаунов  NewAccountPage, найденных по локатору
+ * enum of NewAccountPage dropdowns found by locator
  */
 public enum NewAccountPageEnumDropDownLocators {
 

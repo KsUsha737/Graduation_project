@@ -3,7 +3,7 @@ package Ui.conctants.enums.newLeadePage;
 import org.openqa.selenium.By;
 
 /**
- * enum дропдаунов  NewLeadPage, найденных по локатору
+ * enum of NewLeadPage dropdowns found by locator
  */
 public enum NewLeadPageEnumDropDownLocators {
     SALUTATION("Salutation"),

@@ -9,7 +9,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.By;
 
 /**
- * действия с инструментами правого меню
+ * actions with right menu tools
  */
 @Log4j2
 @Getter

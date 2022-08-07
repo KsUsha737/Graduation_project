@@ -3,7 +3,7 @@ package Ui.conctants.enums.newLeadePage;
 import org.openqa.selenium.By;
 
 /**
- * enum полей для ввода данных NewLeadPage, найденных по локатору
+ * enum fields for entering NewLeadPage data found by locator
  */
 public enum NewLeadPageInputLocatorsEnum {
     PHONE("Phone"),

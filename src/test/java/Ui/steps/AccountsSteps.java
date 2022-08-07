@@ -1,6 +1,5 @@
 package Ui.steps;
 
-import Ui.pages.LoginPage;
 import Ui.pages.accountsPage.AccountsPage;
 import Ui.pages.base.BasePage;
 import io.qameta.allure.Step;
@@ -12,13 +11,7 @@ public class AccountsSteps {
     private BasePage basePage;
     private AccountsPage accountsPage;
 
-    @Step("login")
-    public AccountsSteps login() {
-        basePage = new LoginPage().login();
-        return this;
-    }
-
-    @Step("go ToAccounts Page")
+       @Step("go ToAccounts Page")
     public AccountsSteps goToAccountsPage() {
         accountsPage = basePage.goToSalesPage()
                 .goToAccountsPage();
@@ -34,7 +27,7 @@ public class AccountsSteps {
         return this;
     }
 
-    @Step("delete first User")
+   @Step("delete first User")
     public AccountsSteps deleteFirstUser() {
         accountsPage = accountsPage.getTablePage()
                 .deleteFirstAccount();

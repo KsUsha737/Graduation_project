@@ -5,12 +5,11 @@ import Ui.conctants.enums.newAccountPage.NewAccountPageEnumDropDownLocators;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
-
 import static com.codeborne.selenide.Selenide.$;
 
 /**
- * выбор значения полей DropDown из выпадающего списка
- * выбор поля через Enum
+ * select the value of the DropDown fields from the drop-down list
+ * field selection via Enum
  */
 public class DropDown {
     private final SelenideElement dropDown;

@@ -1,7 +1,5 @@
 package tests;
 
-import org.openqa.selenium.NoSuchSessionException;
-import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -34,13 +32,12 @@ public class TestListener implements ITestListener {
         ITestContext context = iTestResult.getTestContext();
 
             return new byte[]{};
-
     }
+
     public void onStart(ITestContext context){
         System.out.println("onStart"+context.getStartDate());
     }
     public void onFinish(ITestContext context){
         System.out.println("onFinish"+context.getEndDate());
     }
-
 }

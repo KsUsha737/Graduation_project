@@ -10,7 +10,7 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.$;
 
 /**
- * варианты действий с аакаунтами
+ * account options
  */
 public class AccountActions {
     private SelenideElement edit;
@@ -23,7 +23,7 @@ public class AccountActions {
         changeOwner = $(By.xpath("//div[contains(@class,'branding-actions actionMenu popupTargetContainer') and contains(@class, 'visible positioned')]//li[@class='uiMenuItem']/a[@title='Change owner']"));
     }
 
-    @Step("удаление аккаунта")
+    @Step("account deleting")
     public AccountsPage delete() {
         delete.shouldBe(Condition.visible).click();
         Button confirmDelete = new Button(By.xpath("//span[text()='Delete']"));

@@ -1,6 +1,6 @@
 package Ui.pages.accountsPage.elements.tablePage;
 
-import Ui.pages.AccountPage;
+import Ui.pages.accountPage.AccountPage;
 import Ui.wrapers.Button;
 import Ui.wrapers.Link;
 import com.codeborne.selenide.SelenideElement;
@@ -29,24 +29,15 @@ public class AccountTableItem {
         accountActions = new Button(By.xpath("td[6]//a"), element);
     }
 
-    @Step("выбор поля созданного аккаунта для взаимодействия")
+    @Step("select the field of the created account for interaction")
     public AccountActions getActions() {
         accountActions.click();
         return new AccountActions();
     }
 
-    @Step("удаление аккаунта")
-
-    public void deleteAccount() {
-        Button delete = new Button(By.xpath("//div[contains(@class,'branding-actions actionMenu popupTargetContainer') and contains(@class, 'visible positioned')]//li[@class='uiMenuItem']/a[@title='Delete']"));
-        delete.click();
-        Button confirmDelete = new Button(By.xpath("//span[text()='Delete']"));
-        confirmDelete.click();
-    }
-
-    @Step("возвращение на страницу аккаунта")
+    @Step("back to account page")
     public AccountPage goToAccountPage() {
-        accountName.Click();
+        accountName.click();
         return new AccountPage();
     }
 

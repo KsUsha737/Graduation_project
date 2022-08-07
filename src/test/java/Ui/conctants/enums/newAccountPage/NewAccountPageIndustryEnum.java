@@ -1,7 +1,7 @@
 package Ui.conctants.enums.newAccountPage;
 
 /**
- * enum наименований полей дропдауна "Industry" на NewAccountPage
+ * enum names of dropdown fields "Industry" on NewAccountPage
  */
 public enum NewAccountPageIndustryEnum implements NewAccountPageDropdownEnumInterface{
     None("--None--"),

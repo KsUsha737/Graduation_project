@@ -1,7 +1,7 @@
 package Ui.conctants.enums.newAccountPage;
 
 /**
- * enum наименований полей дропдауна "CustomerPriority" на NewAccountPage
+ * enum dropdown field names "CustomerPriority" on NewAccountPage
  */
 public enum NewAccountPageCustomerPriorityEnum implements NewAccountPageDropdownEnumInterface{
     NONE("--None--"),

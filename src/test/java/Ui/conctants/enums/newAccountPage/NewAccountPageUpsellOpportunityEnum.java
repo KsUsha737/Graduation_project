@@ -1,7 +1,7 @@
 package Ui.conctants.enums.newAccountPage;
 
 /**
- * enum наименований полей дропдауна "Upsell Opportunity" на NewAccountPage
+ * enum names of dropdown fields "Upsell Opportunity" on NewAccountPage
  */
 public enum NewAccountPageUpsellOpportunityEnum implements NewAccountPageDropdownEnumInterface{
     NONE("--None--"),
