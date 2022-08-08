@@ -20,7 +20,7 @@ public class Link {
         title=link.getText();
     }
 
-    public void Click (){
+    public void click(){
         link.click();
     }
 }

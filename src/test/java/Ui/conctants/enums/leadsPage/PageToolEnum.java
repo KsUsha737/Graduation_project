@@ -1,7 +1,7 @@
 package Ui.conctants.enums.leadsPage;
 
 /**
- * enum для выбора действия на LeadsPage
+ * enum to select an action on LeadsPage
  */
 public enum PageToolEnum {
     NEW("New"),
@@ -14,10 +14,10 @@ public enum PageToolEnum {
 
     PageToolEnum(String text){
         this.text=text;
-
     }
+
     public String getText() {
         return text;
-
     }
+
 }

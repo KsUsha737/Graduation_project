@@ -13,8 +13,8 @@ import java.util.List;
 import static com.codeborne.selenide.Selenide.$$;
 
 /**
- * таблица созданных аккаунтов
- * содержит наименование столбщов
+ * table of created accounts
+ * contains the name of the columns
  */
 public class TablePage {
     private Button accountName;
@@ -31,7 +31,7 @@ public class TablePage {
         this.phone = new Button(By.xpath("//div[@class='slds-grid listDisplays safari-workaround-anchor']//span[@title='Phone']/ancestor::a"));
         this.accountOwnerAlias = new Button(By.xpath("//div[@class='slds-grid listDisplays safari-workaround-anchor']//span[@title='Account Owner Alias']/ancestor::a"));
 
-        ElementsCollection rows = $$(By.xpath("//div[@class='slds-grid listDisplays safari-workaround-anchor']//table/tbody/tr"));
+        ElementsCollection rows = $$(By.xpath("//div[@class='slds-grid listDisplays safari-workaround-anchor']//table[@aria-label='Recently Viewed']/tbody/tr"));
         items = new ArrayList<>();
         for (SelenideElement element:rows){
             items.add(new AccountTableItem(rows.indexOf(element),element));
@@ -66,7 +66,7 @@ public class TablePage {
         }
         return null;
     }
-    @Step("удаление первого аккаунта")
+    @Step("account deleting")
     public AccountsPage deleteFirstAccount(){
         if (items.size()>0){
             items.get(0).getActions().delete();

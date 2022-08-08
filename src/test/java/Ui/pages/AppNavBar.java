@@ -38,18 +38,23 @@ public class AppNavBar {
     @Step("Go to accounts page")
     public AccountsPage goToAccountsPage() {
         log.info("Go to accounts page");
-        for (NavItem el:navItems){
-            if (el.getText().equals("Accounts")){
-                el.click();
-                break;
+        if (navItems==null){
+            log.error("navItems is null");
+        }else {
+            for (NavItem el:navItems){
+                if (el.getText().equals("Accounts")){
+                    el.click();
+                    break;
+                }
             }
         }
+
         return new AccountsPage();
 
     }
 
     @Step("Go to contacts page")
-    public ContactsPage goToContactPage() {
+    public ContactsPage goToContactsPage() {
         log.info("Go to contacts page");
         for (NavItem el:navItems){
             if(el.getText().equals("Contacts")){

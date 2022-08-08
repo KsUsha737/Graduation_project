@@ -1,7 +1,7 @@
 package Ui.pages.newAccountPage;
 
 import Ui.conctants.enums.newAccountPage.*;
-import Ui.pages.AccountPage;
+import Ui.pages.accountPage.AccountPage;
 import Ui.wrapers.Button;
 import Ui.wrapers.Input;
 import io.qameta.allure.Step;
@@ -79,7 +79,7 @@ public class NewAccountPage {
         saveButton = new Button(By.xpath("//button[@class='slds-button slds-button_brand']"));
     }
 
-    @Step("создание нового аккаунта задавая значения")
+    @Step("creating a new account by setting values")
     public AccountPage create(NewAccount newAccount) {
         accountName.fill(newAccount.getAccountName());
         phone.fill(newAccount.getPhone());
@@ -115,7 +115,7 @@ public class NewAccountPage {
         return new AccountPage();
     }
 
-    @Step("создание нового аккаунта используя данные из json file")
+    @Step("creating a new account using data from json file")
     public AccountPage create(String accountJsonFileName) throws FileNotFoundException {
         NewAccount newAccount = new NewAccountJsonReader().read(accountJsonFileName);
         accountName.fill(newAccount.getAccountName());

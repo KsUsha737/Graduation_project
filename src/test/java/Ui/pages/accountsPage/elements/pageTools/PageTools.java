@@ -12,9 +12,8 @@ import java.util.Objects;
 import static com.codeborne.selenide.Selenide.$$;
 
 /**
- * инструменты правого меню страницы
- * создан лист кнопок правого меню ("New" и "Import" и др.)
- * действителен для исех страниц AppNavBar
+ * page right menu tools
+ * created a list of right menu buttons ("New" and "Import", etc.)
  */
 public class PageTools {
     private List<PageTool> pageTools;
@@ -29,16 +28,16 @@ public class PageTools {
         }
     }
 
-    @Step("Переход на форму для создания нового аккаунта")
+    @Step("Go to the form to create a new account")
     public NewAccountPage goToNewAccountPage() {
-        NewAccountPage newAccountsPage = null;
+        NewAccountPage newAccountPage = null;
         for (PageTool el : pageTools) {
             if (el.getText().equals(PageToolEnum.NEW.getText())) {
                 el.click();
-                newAccountsPage = new NewAccountPage();
+                newAccountPage = new NewAccountPage();
             }
         }
-        return newAccountsPage;
+        return newAccountPage;
     }
 
 }

@@ -16,7 +16,7 @@ public class LoginPage {
 
     @Step("Login with standard user")
     public BasePage login() {
-        log.info("Login with standard user");
+        log.info("Login with standard user{PropertiesKeys.LOGIN,PropertiesKeys.PASSWORD}");
         usernameField.fill(PropertyReader.getProperty(PropertiesKeys.LOGIN));
         passwordField.fill(PropertyReader.getProperty(PropertiesKeys.PASSWORD));
         loginButton.click();

@@ -1,7 +1,7 @@
 package Ui.conctants.enums.newLeadePage;
 
 /**
- * enum наименований полей дропдауна "Primary" на NewAccountPage
+ * enum names of dropdown fields "Primary"
  */
 public enum NewLeadPagePrimaryEnum implements NewLeadPageDropdownEnumInterface{
     NONE("--None--"),

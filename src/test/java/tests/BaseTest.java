@@ -1,5 +1,8 @@
 package tests;
 
+import Ui.pages.newAccountPage.NewAccountJsonReader;
+import Ui.steps.AccountsSteps;
+import Ui.steps.LoginSteps;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
@@ -8,9 +11,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import utils.SelenideConfiguration;
-
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.Selenide.open;
+
 @Log4j2
 @Listeners(TestListener.class)
 public class BaseTest {
@@ -22,14 +25,15 @@ public class BaseTest {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide()
                 .screenshots(true)
                 .savePageSource(false)
-                .includeSelenideSteps(true)
+                .includeSelenideSteps(false)
         );
+
         SelenideConfiguration.Configure();
         open("");
     }
 
-   @AfterMethod
-    public void close(){
+    @AfterMethod
+    public void close() {
         closeWebDriver();
     }
 }
