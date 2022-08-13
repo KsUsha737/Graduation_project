@@ -1,8 +1,5 @@
 package tests;
 
-import Ui.pages.newAccountPage.NewAccountJsonReader;
-import Ui.steps.AccountsSteps;
-import Ui.steps.LoginSteps;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
@@ -17,6 +14,8 @@ import static com.codeborne.selenide.Selenide.open;
 @Log4j2
 @Listeners(TestListener.class)
 public class BaseTest {
+//    LoginSteps loginSteps = new LoginSteps();
+//    AccountsSteps accountsSteps = new AccountsSteps();
 
     @BeforeMethod
     public void setUp() {

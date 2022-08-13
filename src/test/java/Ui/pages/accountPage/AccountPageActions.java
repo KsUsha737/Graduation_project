@@ -16,7 +16,6 @@ import static com.codeborne.selenide.Selenide.$;
  */
 @Log4j2
 public class AccountPageActions extends AppNavBar {
-    private SelenideElement actions;
     private SelenideElement detailsLink;
     private SelenideElement relatedLink;
     private SelenideElement newsLink;

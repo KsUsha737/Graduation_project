@@ -23,7 +23,7 @@ public class ContactActions {
         addToCampaign = $(By.xpath("//div[contains(@class,'branding-actions actionMenu popupTargetContainer') and contains(@class, 'visible positioned')]//li[@class='uiMenuItem']/a[@title='Change owner']"));
     }
 
-    @Step("удаление контакта")
+    @Step("delete contact")
     public ContactsPageInAccountPage delete() {
         delete.shouldBe(Condition.visible).click();
         Button confirmDelete = new Button(By.xpath("//span[text()='Delete']"));

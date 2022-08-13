@@ -1,6 +1,6 @@
 package Ui.pages.accountPage.contactsPageInAccountPage.elements.tablePage;
 
-import Ui.pages.accountPage.contactsPageInAccountPage.ContactsPageInAccountPage;
+import Ui.pages.accountPage.contactsPageInAccountPage.ContactPageInAccountPage;
 import Ui.wrapers.Button;
 import Ui.wrapers.Link;
 import com.codeborne.selenide.SelenideElement;
@@ -44,9 +44,9 @@ public class ContactTableItem {
     }
 
     @Step("return to contact page")
-    public ContactsPageInAccountPage goToContactsPageInAccountPage(){
+    public ContactPageInAccountPage goToContactPageInAccountPage(){
         contactName.click();
-        return new ContactsPageInAccountPage();
+        return new ContactPageInAccountPage();
     }
 
 }
