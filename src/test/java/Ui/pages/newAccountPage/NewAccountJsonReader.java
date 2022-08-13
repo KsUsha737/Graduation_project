@@ -19,6 +19,6 @@ public class NewAccountJsonReader {
         newAccount.setAccountSite(counter+newAccount.getAccountSite());
         newAccount.setAccountName(counter+newAccount.getAccountName());
         counter++;
-        return gson.fromJson(new FileReader(String.format("src/test/resources/jsonTestData/accounts/%s",fileName)),NewAccount.class);
+        return newAccount;
     }
 }

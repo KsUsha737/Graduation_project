@@ -11,8 +11,8 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <jackson.version>2.12.3</jackson.version>
-        <aspect.version>1.9.7</aspect.version>
+        <jackson.version>2.13.3</jackson.version>
+        <aspect.version>1.9.6</aspect.version>
     </properties>
 
 
@@ -38,7 +38,7 @@
                     <dependency>
                         <groupId>org.aspectj</groupId>
                         <artifactId>aspectjweaver</artifactId>
-                        <version>${aspect.version}</version>
+                        <version>1.9.7</version>
                     </dependency>
                 </dependencies>
             </plugin>
@@ -57,7 +57,7 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.6.0</version>
+            <version>7.6.1</version>
             <scope>test</scope>
         </dependency>
 
@@ -65,14 +65,14 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.2.2</version>
+            <version>4.3.0</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>5.2.0</version>
+            <version>5.2.2</version>
         </dependency>
 
         <dependency>
@@ -109,14 +109,14 @@
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
-            <version>2.17.2</version>
+            <version>2.18.0</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.codeborne/selenide -->
 
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-api</artifactId>
-            <version>2.17.2</version>
+            <version>2.18.0</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.codeborne/selenide -->
 
@@ -130,7 +130,7 @@
         <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
-            <version>6.6.3</version>
+            <version>6.6.6</version>
             <scope>test</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-selenide -->
@@ -142,7 +142,7 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>RELEASE</version>
+            <version>5.9.0</version>
             <scope>test</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
