@@ -15,7 +15,7 @@ import java.io.FileNotFoundException;
 
 public class CreateNewContactInCreatingAccount extends BaseTest {
 
-    @Test(description = "creating contact in account")
+    @Test(description = "creating contact in account",retryAnalyzer = Retry.class)
     public void CreateNewContactInCreatingAccount() throws FileNotFoundException {
 
         NewAccountJsonReader reader = new NewAccountJsonReader();

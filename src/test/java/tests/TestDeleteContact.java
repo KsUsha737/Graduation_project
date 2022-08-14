@@ -15,7 +15,7 @@ import java.io.FileNotFoundException;
 
 public class TestDeleteContact extends  BaseTest{
 
-    @Test(description = "delete contact on account",invocationCount = 2)
+    @Test(description = "delete contact on account")
     public void deleteContact() throws FileNotFoundException {
 
         NewAccountJsonReader reader = new NewAccountJsonReader();

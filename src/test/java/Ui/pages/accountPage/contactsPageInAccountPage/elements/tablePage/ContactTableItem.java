@@ -25,7 +25,7 @@ public class ContactTableItem {
         title = element.$(By.xpath("td[3]")).getText();
         email = element.$(By.xpath("td[4]")).getText();
         phone = element.$(By.xpath("td[5]")).getText();
-        contactActions = new Button(By.xpath("td[6]"));
+        contactActions = new Button(By.xpath("td[6]"),element);
     }
 
     @Step("select the contact field for interaction")
