@@ -12,7 +12,7 @@ import java.io.FileNotFoundException;
 
 public class TestCreateNewAccounts extends BaseTest {
 
-    @Test(description = "create account",invocationCount =2,skipFailedInvocations = true)
+    @Test(description = "create account",invocationCount =2,retryAnalyzer = Retry.class)
     public void createNewAccounts() throws FileNotFoundException {
         NewAccountJsonReader reader = new NewAccountJsonReader();
         NewAccount newAccount = reader.read("account1.json");

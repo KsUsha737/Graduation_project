@@ -14,7 +14,7 @@ import java.io.FileNotFoundException;
 
 public class TestVisibleEditingContactMobile extends BaseTest{
 
-    @Test(retryAnalyzer= Retry.class)
+    @Test(description = "change and display the changed contact Mobile{newMobile= 8029333333}",retryAnalyzer= Retry.class)
     public void editMobile() throws FileNotFoundException{
         NewAccountJsonReader reader = new NewAccountJsonReader();
         NewAccount newAccount = reader.read("account2.json");
