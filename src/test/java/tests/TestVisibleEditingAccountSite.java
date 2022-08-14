@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 import java.io.FileNotFoundException;
 
 public class TestVisibleEditingAccountSite extends BaseTest{
-    @Test(description = "change and display the changed account field{newSite = 7788.com}", invocationCount = 2)
+    @Test(description = "change and display the changed account field{newSite = 7788.com}", invocationCount = 2,retryAnalyzer = Retry.class)
     public  void editSite() throws FileNotFoundException {
         NewAccountJsonReader reader = new NewAccountJsonReader();
         NewAccount newAccount = reader.read("account2.json");

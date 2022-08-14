@@ -2,12 +2,16 @@ package Ui.pages.newAccountPage;
 
 import Ui.conctants.enums.newAccountPage.*;
 import Ui.pages.accountPage.AccountPage;
+import Ui.pages.accountsPage.AccountsPage;
 import Ui.wrapers.Button;
 import Ui.wrapers.Input;
+import Ui.wrapers.Link;
+import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 import java.io.FileNotFoundException;
+import java.util.Objects;
 
 import static com.codeborne.selenide.Selenide.$;
 
@@ -44,6 +48,7 @@ public class NewAccountPage {
     private final DropDown activeDropDown;
 
     private final Button saveButton;
+    private final Button cancelButton;
 
     public NewAccountPage() {
         accountName = new Input(NewAccountPageInputLocators.ACCOUNT_NAME.getLocator());
@@ -76,7 +81,10 @@ public class NewAccountPage {
         upsell_OpportunityDropDown= new DropDown(NewAccountPageEnumDropDownLocators.UPSELL_OPPORTUNITY);
         activeDropDown= new DropDown(NewAccountPageEnumDropDownLocators.ACTIVE);
 
-        saveButton = new Button(By.xpath("//button[@class='slds-button slds-button_brand']"));
+//        saveButton = new Button(By.xpath("//button[@class='slds-button slds-button_brand']"));
+        saveButton = new Button(By.xpath("//button[text()='Save']"));
+        cancelButton = new Button(By.xpath("//button[text()='Cancel']"));
+
     }
 
     @Step("creating a new account by setting values")
@@ -150,6 +158,50 @@ public class NewAccountPage {
 
         saveButton.click();
         return new AccountPage();
+    }
+
+    @Step("creating a new account by negative setting values")
+    public String negativeCreate(NewAccount newAccount){
+        accountName.fill(newAccount.getAccountName());
+        phone.fill(newAccount.getPhone());
+        fax.fill(newAccount.getFax());
+        website.fill(newAccount.getWebsite());
+        accountNumber.fill(newAccount.getAccountNumber());
+        accountSite.fill(newAccount.getAccountSite());
+        tickerSymbol.fill(newAccount.getTickerSymbol());
+        employees.fill(newAccount.getEmployees());
+        annualRevenue.fill(newAccount.getAnnualRevenue());
+        sICCode.fill(newAccount.getSICCode());
+        billingCity.fill(newAccount.getBillingCity());
+        billingStateProvince.fill(newAccount.getBillingStateProvince());
+        shippingCity.fill(newAccount.getShippingCity());
+        shippingStateProvince.fill(newAccount.getBillingStateProvince());
+        billingZipPostalCode.fill(newAccount.getBillingZipPostalCode());
+        billingCountry.fill(newAccount.getBillingCountry());
+        shippingZipPostalCode.fill(newAccount.getBillingZipPostalCode());
+        shippingCountry.fill(newAccount.getShippingCity());
+        sLASerialNumber.fill(newAccount.getSLASerialNumber());
+        numberOfLocations.fill(newAccount.getNumberOfLocations());
+
+        ratingDropDown.select(newAccount.getRating());
+        typeDropDown.select(newAccount.getType());
+        ownershipDropDown.select(newAccount.getOwnership());
+        industryDropDown.select(newAccount.getIndustry());
+        customer_PriorityDropDown.select(newAccount.getCustomerPriority());
+        sLADropDown.select(newAccount.getSLA());
+        upsell_OpportunityDropDown.select(newAccount.getUpsellOpportunity());
+        activeDropDown.select(newAccount.getActive());
+
+        saveButton.click();
+        SelenideElement selenideElement=$(By.xpath("//div[@class='uiPanel--default uiPanel positioned north forceFormPageError slds-popover slds-popover_warning open active']//div[@class='slds-media__body']/h2[@title='Similar Records Exist']"));
+
+        return selenideElement.getText();
+    }
+
+    @Step("cancelling create new account")
+    public AccountsPage cancel(){
+        cancelButton.click();
+        return new AccountsPage();
     }
 
 }
