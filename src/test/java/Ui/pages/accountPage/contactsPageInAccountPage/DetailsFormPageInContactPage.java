@@ -1,6 +1,6 @@
 package Ui.pages.accountPage.contactsPageInAccountPage;
 
-import Ui.conctants.enums.newContactPageInAccountpage.InputEnum;
+import Ui.constants.enums.newContactPageInAccountpage.InputEnum;
 import Ui.wrapers.Button;
 import Ui.wrapers.Input;
 import lombok.Getter;

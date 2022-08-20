@@ -1,6 +1,6 @@
 package Ui.pages.newLeadPage;
 
-import Ui.conctants.enums.newLeadePage.*;
+import Ui.constants.enums.newLeadePage.*;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import lombok.*;

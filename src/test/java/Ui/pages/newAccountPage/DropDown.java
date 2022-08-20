@@ -1,7 +1,7 @@
 package Ui.pages.newAccountPage;
 
-import Ui.conctants.enums.newAccountPage.NewAccountPageDropdownEnumInterface;
-import Ui.conctants.enums.newAccountPage.NewAccountPageEnumDropDownLocators;
+import Ui.constants.enums.newAccountPage.NewAccountPageDropdownEnumInterface;
+import Ui.constants.enums.newAccountPage.NewAccountPageEnumDropDownLocators;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;

@@ -1,7 +1,7 @@
 package Ui.pages.newLeadPage;
 
-import Ui.conctants.enums.newLeadePage.NewLeadPageDropdownEnumInterface;
-import Ui.conctants.enums.newLeadePage.NewLeadPageEnumDropDownLocators;
+import Ui.constants.enums.newLeadePage.NewLeadPageDropdownEnumInterface;
+import Ui.constants.enums.newLeadePage.NewLeadPageEnumDropDownLocators;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;

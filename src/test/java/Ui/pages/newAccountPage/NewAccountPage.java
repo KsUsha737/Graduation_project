@@ -1,17 +1,15 @@
 package Ui.pages.newAccountPage;
 
-import Ui.conctants.enums.newAccountPage.*;
+import Ui.constants.enums.newAccountPage.*;
 import Ui.pages.accountPage.AccountPage;
 import Ui.pages.accountsPage.AccountsPage;
 import Ui.wrapers.Button;
 import Ui.wrapers.Input;
-import Ui.wrapers.Link;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 import java.io.FileNotFoundException;
-import java.util.Objects;
 
 import static com.codeborne.selenide.Selenide.$;
 

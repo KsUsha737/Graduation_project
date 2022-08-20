@@ -1,6 +1,6 @@
 package Ui.pages.accountPage.contactsPageInAccountPage.elements.pageTools;
 
-import Ui.conctants.enums.newContactPageInAccountpage.PageToolEnum;
+import Ui.constants.enums.newContactPageInAccountpage.PageToolEnum;
 import Ui.pages.accountPage.contactsPageInAccountPage.NewContactPageCreateInAccountPage;
 import Ui.pages.accountsPage.elements.pageTools.PageTool;
 

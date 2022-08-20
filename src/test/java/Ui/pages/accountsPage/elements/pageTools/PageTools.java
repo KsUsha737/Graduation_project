@@ -1,6 +1,6 @@
 package Ui.pages.accountsPage.elements.pageTools;
 
-import Ui.conctants.enums.accountsPage.PageToolEnum;
+import Ui.constants.enums.accountsPage.PageToolEnum;
 import Ui.pages.newAccountPage.NewAccountPage;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
