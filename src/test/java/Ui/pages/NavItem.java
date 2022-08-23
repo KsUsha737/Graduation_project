@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 
 @Getter
 public class NavItem {
+
     private SelenideElement link;
     private String text;
 

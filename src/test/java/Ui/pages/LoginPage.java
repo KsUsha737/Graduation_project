@@ -8,8 +8,10 @@ import lombok.extern.log4j.Log4j2;
 import org.openqa.selenium.By;
 import utils.PropertiesKeys;
 import utils.PropertyReader;
+
 @Log4j2
 public class LoginPage {
+
     Input usernameField = new Input(By.xpath("//input[@id='username']"));
     Input passwordField = new Input(By.id("password"));
     Button loginButton = new Button(By.id("Login"));
@@ -31,5 +33,4 @@ public class LoginPage {
         loginButton.click();
         return new BasePage();
     }
-
 }

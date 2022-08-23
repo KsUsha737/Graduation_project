@@ -17,6 +17,7 @@ import static com.codeborne.selenide.Selenide.$$;
  * contains the names of the columns
  */
 public class TablePage {
+
     private Button contactName;
     private Button title;
     private Button email;
@@ -75,5 +76,4 @@ public class TablePage {
         }
         return new ContactsPageInAccountPage();
     }
-
 }

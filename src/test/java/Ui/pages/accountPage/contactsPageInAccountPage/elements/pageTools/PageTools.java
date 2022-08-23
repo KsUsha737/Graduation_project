@@ -21,6 +21,7 @@ import static com.codeborne.selenide.Selenide.$$;
  * valid for all AppNavBar pages
  */
 public class PageTools {
+
     private List<PageTool> pageTools;
 
     public PageTools() {
@@ -44,5 +45,4 @@ public class PageTools {
         }
         return new NewContactPageCreateInAccountPage();
     }
-
 }

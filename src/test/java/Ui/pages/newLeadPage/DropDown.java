@@ -8,10 +8,9 @@ import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
 
-
 public class DropDown {
-    private final SelenideElement dropDown;
 
+    private final SelenideElement dropDown;
 
     public DropDown(NewLeadPageEnumDropDownLocators newLeadPageEnumDropDownLocator) {
         dropDown = $(newLeadPageEnumDropDownLocator.getLocator()).scrollIntoView(true);

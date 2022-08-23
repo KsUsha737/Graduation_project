@@ -10,6 +10,7 @@ import org.openqa.selenium.By;
 
 @Getter
 public class DetailsFormPage {
+
     private final Input accountName;
     private final Input phone;
     private final Input fax;
@@ -84,5 +85,4 @@ public class DetailsFormPage {
         saveButton.click();
         return new AccountPageActions();
     }
-
 }

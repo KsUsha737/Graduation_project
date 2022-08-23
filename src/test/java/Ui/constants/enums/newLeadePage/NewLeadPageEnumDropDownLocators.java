@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
  * enum of NewLeadPage dropdowns found by locator
  */
 public enum NewLeadPageEnumDropDownLocators {
+
     SALUTATION("Salutation"),
     LEAD_SOURCE("Lead Source"),
     INDUSTRY("Industry"),

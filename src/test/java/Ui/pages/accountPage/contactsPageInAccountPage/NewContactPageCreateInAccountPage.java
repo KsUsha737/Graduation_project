@@ -131,10 +131,7 @@ public class NewContactPageCreateInAccountPage {
         lead_Source.select(newContact.getLeadSource());
         level.select(newContact.getLevel());
 
-
-
         saveButton.click();
         return new ContactsPageInAccountPage();
     }
-
 }

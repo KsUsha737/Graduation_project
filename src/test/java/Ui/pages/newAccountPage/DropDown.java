@@ -12,6 +12,7 @@ import static com.codeborne.selenide.Selenide.$;
  * field selection via Enum
  */
 public class DropDown {
+
     private final SelenideElement dropDown;
 
     public DropDown(NewAccountPageEnumDropDownLocators newAccountPageEnumDropDownLocator) {

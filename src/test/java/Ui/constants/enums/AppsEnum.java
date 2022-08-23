@@ -6,6 +6,7 @@ package Ui.constants.enums;
  */
 
 public enum AppsEnum {
+
     SERVICE("Service"),
     MARKETING("Marketing"),
     COMMUNITY("Community"),

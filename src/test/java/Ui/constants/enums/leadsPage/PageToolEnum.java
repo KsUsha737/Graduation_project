@@ -4,6 +4,7 @@ package Ui.constants.enums.leadsPage;
  * enum to select an action on LeadsPage
  */
 public enum PageToolEnum {
+
     NEW("New"),
     IMPORT("Import"),
     ADD_TO_CAMPAIGN("Add to Campaign"),
@@ -19,5 +20,4 @@ public enum PageToolEnum {
     public String getText() {
         return text;
     }
-
 }

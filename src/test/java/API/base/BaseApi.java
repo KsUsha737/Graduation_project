@@ -5,14 +5,13 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-
 import static io.restassured.RestAssured.given;
 
 public class BaseApi {
-
     protected Gson gson;
     protected TokenInfo tokenInfo;
-    RequestSpecification requestSpecification;
+    private RequestSpecification requestSpecification;
+    private final String baseUrl;
 
     protected BaseApi() {
         gson = new GsonBuilder().create();
@@ -21,14 +20,13 @@ public class BaseApi {
                 header("Content-Type", "application/json").
                 header("Authorization", tokenInfo.getTokenType()+" "+ tokenInfo.getAccessToken()).
                 log().all();
+        baseUrl=tokenInfo.getInstanceUrl().concat("/services/data/v55.0/sobjects/");
     }
 
     protected Response get(String url, int expectedStatusCode) {
         return requestSpecification
                 .when()
-                .get(tokenInfo.getInstanceUrl()
-                        .concat("/services/data/v55.0/sobjects/")
-                        .concat(url))
+                .get(baseUrl.concat(url))
                 .then()
                 .statusCode(expectedStatusCode)
                 .log()
@@ -42,9 +40,7 @@ public class BaseApi {
                 .log()
                 .all()
                 .when()
-                .post(tokenInfo.getInstanceUrl()
-                        .concat("/services/data/v55.0/sobjects/")
-                        .concat(url))
+                .post(baseUrl.concat(url))
                 .then()
                 .statusCode(expectedStatusCode)
                 .extract()
@@ -57,9 +53,7 @@ public class BaseApi {
                 .log()
                 .all()
                 .when()
-                .patch(tokenInfo.getInstanceUrl()
-                        .concat("/services/data/v55.0/sobjects/")
-                        .concat(url))
+                .patch(baseUrl.concat(url))
                 .then()
                 .statusCode(expectedStatusCode)
                 .extract()
@@ -68,12 +62,9 @@ public class BaseApi {
 
     protected Response delete(String url, int expectedStatusCode) {
         return requestSpecification
-                .delete(tokenInfo.getInstanceUrl()
-                        .concat("/services/data/v55.0/sobjects/")
-                        .concat(url))
+                .delete(baseUrl.concat(url))
                 .then()
                 .statusCode(expectedStatusCode)
                 .extract().response();
     }
-
 }

@@ -9,18 +9,15 @@ import lombok.Builder;
 import lombok.Data;
 import utils.PropertiesKeys;
 import utils.PropertyReader;
-
 import static io.restassured.RestAssured.given;
-import static utils.PropertyReader.*;
 
 @Data
 @Builder
 public class TokenGetter {
+
     @Step("Get access token")
     public static TokenInfo get(){
         Gson gson = new GsonBuilder().create();
-        given()
-                ;
         Response response =
                 given()
                         .contentType("multipart/form-data")

@@ -8,14 +8,13 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import utils.SelenideConfiguration;
+
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.Selenide.open;
 
 @Log4j2
 @Listeners(TestListener.class)
 public class BaseTest {
-//    LoginSteps loginSteps = new LoginSteps();
-//    AccountsSteps accountsSteps = new AccountsSteps();
 
     @BeforeMethod
     public void setUp() {

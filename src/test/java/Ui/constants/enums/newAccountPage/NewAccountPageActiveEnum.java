@@ -4,6 +4,7 @@ package Ui.constants.enums.newAccountPage;
  * enum dropdown field names "Active" on NewAccountPage
  */
 public enum NewAccountPageActiveEnum implements NewAccountPageDropdownEnumInterface{
+
     NONE("--None--"),
     NO("No"),
     YES("Yes");

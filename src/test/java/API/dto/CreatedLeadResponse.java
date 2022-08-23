@@ -13,9 +13,7 @@ import lombok.NoArgsConstructor;
 @Builder
 public class CreatedLeadResponse {
     @Expose
-    @SerializedName("id")
     private String id;
     @Expose
-    @SerializedName("success")
     private boolean success;
 }

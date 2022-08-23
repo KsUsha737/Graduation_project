@@ -79,10 +79,8 @@ public class NewAccountPage {
         upsell_OpportunityDropDown= new DropDown(NewAccountPageEnumDropDownLocators.UPSELL_OPPORTUNITY);
         activeDropDown= new DropDown(NewAccountPageEnumDropDownLocators.ACTIVE);
 
-//        saveButton = new Button(By.xpath("//button[@class='slds-button slds-button_brand']"));
         saveButton = new Button(By.xpath("//button[text()='Save']"));
         cancelButton = new Button(By.xpath("//button[text()='Cancel']"));
-
     }
 
     @Step("creating a new account by setting values")
@@ -201,5 +199,4 @@ public class NewAccountPage {
         cancelButton.click();
         return new AccountsPage();
     }
-
 }

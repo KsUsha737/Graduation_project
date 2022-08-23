@@ -52,7 +52,5 @@ public class TestVisibleEditingContactMobile extends BaseTest{
                 .back()
                 .goToAccountsPage().getTablePage().deleteFirstAccount();
         Assert.assertEquals(newNumberMobile,newMobile);
-
     }
-
 }

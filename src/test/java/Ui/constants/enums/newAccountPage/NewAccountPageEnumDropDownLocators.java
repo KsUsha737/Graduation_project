@@ -2,8 +2,6 @@ package Ui.constants.enums.newAccountPage;
 
 import org.openqa.selenium.By;
 
-import static com.codeborne.selenide.Selenide.$;
-
 /**
  * enum of NewAccountPage dropdowns found by locator
  */

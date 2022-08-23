@@ -13,6 +13,7 @@ import static com.codeborne.selenide.Selenide.$;
  * contact options
  */
 public class ContactActions {
+
     private SelenideElement edit;
     private SelenideElement delete;
     private SelenideElement addToCampaign;
@@ -30,5 +31,4 @@ public class ContactActions {
         confirmDelete.click();
         return new ContactsPageInAccountPage();
     }
-
 }

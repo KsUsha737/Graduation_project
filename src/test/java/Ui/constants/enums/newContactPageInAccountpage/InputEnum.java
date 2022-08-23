@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
  * enum fields for entering data found by locator
  */
 public enum InputEnum {
+
     PHONE("Phone"),
     HOME_PHONE("Home Phone"),
     FIRST_Name("First Name"),

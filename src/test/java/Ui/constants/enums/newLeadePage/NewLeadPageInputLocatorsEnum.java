@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
  * enum fields for entering NewLeadPage data found by locator
  */
 public enum NewLeadPageInputLocatorsEnum {
+
     PHONE("Phone"),
     MOBILE("Mobile"),
     FIRST_NAME("First Name"),

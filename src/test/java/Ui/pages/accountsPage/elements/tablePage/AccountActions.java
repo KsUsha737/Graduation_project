@@ -13,6 +13,7 @@ import static com.codeborne.selenide.Selenide.$;
  * account options
  */
 public class AccountActions {
+
     private SelenideElement edit;
     private SelenideElement delete;
     private SelenideElement changeOwner;
@@ -30,5 +31,4 @@ public class AccountActions {
         confirmDelete.click();
         return new AccountsPage();
     }
-
 }

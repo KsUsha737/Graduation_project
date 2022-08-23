@@ -17,5 +17,4 @@ public class AccountPage extends AppNavBar {
     public AccountPageActions goToAccountPageActions(){
         return new AccountPageActions();
     }
-
 }

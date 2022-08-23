@@ -1,7 +1,6 @@
 package Ui.pages.accountPage.contactsPageInAccountPage;
 
 import Ui.pages.AppNavBar;
-import Ui.pages.accountPage.DetailsFormPage;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
@@ -11,6 +10,7 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.$;
 @Log4j2
 public class ContactPageInAccountPageActions extends AppNavBar {
+
     private SelenideElement detailsLink;
     private SelenideElement relatedLink;
     private SelenideElement newsLink;
@@ -21,6 +21,7 @@ public class ContactPageInAccountPageActions extends AppNavBar {
         newsLink=$(By.xpath("//div[contains(@class,'windowViewMode-normal')]//div[contains(@class,'region-main')]//div[@class='slds-tabs_card']//div[@class='slds-tabs_default']/lightning-tab-bar/ul/li/a[@data-label='News']"));
 
     }
+
     /**
      * Click on the 'Details' tab
      * and make all fields editable

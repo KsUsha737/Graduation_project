@@ -11,6 +11,7 @@ import org.openqa.selenium.By;
  */
 @Getter
 public class DetailsFormPageInContactPage {
+
     private final Input phone;
     private final Input homePhone;
     private final Input mobile;
