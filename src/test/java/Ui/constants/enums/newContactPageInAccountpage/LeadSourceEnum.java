@@ -22,5 +22,4 @@ public enum LeadSourceEnum implements PageDropDownEnumInterface {
     public String toString() {
         return text;
     }
-
 }

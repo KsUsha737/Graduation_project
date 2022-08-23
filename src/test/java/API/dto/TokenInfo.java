@@ -9,7 +9,6 @@ import lombok.*;
 @Data
 @Builder
 public class TokenInfo {
-
     @Expose
     @SerializedName("access_token")
     private String accessToken;

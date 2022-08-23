@@ -17,11 +17,11 @@ import static com.codeborne.selenide.Selenide.$$;
  * contains the name of the columns
  */
 public class TablePage {
+
     private Button accountName;
     private Button accountSite;
     private Button phone;
     private Button accountOwnerAlias;
-
 
     private List<AccountTableItem> items;
 
@@ -66,6 +66,7 @@ public class TablePage {
         }
         return null;
     }
+
     @Step("account deleting")
     public AccountsPage deleteFirstAccount(){
         if (items.size()>0){
@@ -73,5 +74,4 @@ public class TablePage {
         }
         return new AccountsPage();
     }
-
 }

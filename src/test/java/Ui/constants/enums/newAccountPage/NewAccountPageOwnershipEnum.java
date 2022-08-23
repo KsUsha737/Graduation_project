@@ -4,6 +4,7 @@ package Ui.constants.enums.newAccountPage;
  * enum names of dropdown fields "Ownership" on NewAccountPage
  */
 public enum NewAccountPageOwnershipEnum implements NewAccountPageDropdownEnumInterface {
+
     NONE("--None--"),
     PUBLIC("Public"),
     PRIVATE("Private"),
@@ -20,5 +21,4 @@ public enum NewAccountPageOwnershipEnum implements NewAccountPageDropdownEnumInt
     public String toString() {
         return text;
     }
-
 }

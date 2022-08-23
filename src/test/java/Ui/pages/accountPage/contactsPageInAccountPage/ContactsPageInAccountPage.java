@@ -6,6 +6,7 @@ import Ui.pages.accountPage.contactsPageInAccountPage.elements.tablePage.TablePa
 import lombok.Getter;
 
 public class ContactsPageInAccountPage extends AppNavBar {
+
     @Getter
     private TablePage tablePage;
     @Getter
@@ -16,5 +17,4 @@ public class ContactsPageInAccountPage extends AppNavBar {
         pageTools = new PageTools();
         tablePage=new TablePage();
     }
-
 }

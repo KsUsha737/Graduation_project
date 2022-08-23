@@ -4,6 +4,7 @@ package Ui.constants.enums.newAccountPage;
  * enum dropdown field names "CustomerPriority" on NewAccountPage
  */
 public enum NewAccountPageCustomerPriorityEnum implements NewAccountPageDropdownEnumInterface{
+
     NONE("--None--"),
     HIGH("High"),
     LOW("Low"),
@@ -19,5 +20,4 @@ public enum NewAccountPageCustomerPriorityEnum implements NewAccountPageDropdown
     public String toString() {
         return text;
     }
-
 }

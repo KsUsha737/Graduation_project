@@ -62,5 +62,4 @@ public class TestCreateNewAccounts extends BaseTest {
 
         Assert.assertEquals(postPhoneNumber, newPhone);
     }
-
 }

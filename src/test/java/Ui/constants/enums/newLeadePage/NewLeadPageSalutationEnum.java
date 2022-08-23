@@ -4,6 +4,7 @@ package Ui.constants.enums.newLeadePage;
  * enum names of dropdown fields "Salutation"
  */
 public enum NewLeadPageSalutationEnum implements NewLeadPageDropdownEnumInterface {
+
     None("--None--"),
     MR("Mr."),
     MS("Ms."),

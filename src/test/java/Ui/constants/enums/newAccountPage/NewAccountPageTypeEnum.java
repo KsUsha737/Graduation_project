@@ -4,6 +4,7 @@ package Ui.constants.enums.newAccountPage;
  * enum names of dropdown fields "Type" on NewAccountPage
  */
 public enum NewAccountPageTypeEnum implements NewAccountPageDropdownEnumInterface {
+
     NONE("--None--"),
     PROSPECT("Prospect"),
     CUSTOMER_DIRECT("Customer - Direct"),

@@ -89,6 +89,4 @@ public class NewContact {
     private LevelEnum level;
 
     private String FullName;
-
-
 }

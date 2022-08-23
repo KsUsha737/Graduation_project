@@ -4,6 +4,7 @@ package Ui.constants.enums.newLeadePage;
  * enum names of dropdown fields "Rating"
  */
 public enum NewLeadPageRatingEnum implements NewLeadPageDropdownEnumInterface{
+
     NONE("--None--"),
     HOT("Hot"),
     WARM("Warm"),
@@ -19,5 +20,4 @@ public enum NewLeadPageRatingEnum implements NewLeadPageDropdownEnumInterface{
     public String toString() {
         return text;
     }
-
 }

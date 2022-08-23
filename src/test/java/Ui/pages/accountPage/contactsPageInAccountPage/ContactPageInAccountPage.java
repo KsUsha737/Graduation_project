@@ -16,5 +16,4 @@ public class ContactPageInAccountPage extends AppNavBar {
     public ContactPageInAccountPageActions goToContactPageInAccountPageActions() {
         return new ContactPageInAccountPageActions();
     }
-
 }

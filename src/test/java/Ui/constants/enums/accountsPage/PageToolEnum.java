@@ -4,6 +4,7 @@ package Ui.constants.enums.accountsPage;
  * enum to select action on AccountsPage
  */
 public enum PageToolEnum {
+
     NEW("New"),
     IMPORT("Import");
 

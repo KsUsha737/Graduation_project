@@ -17,5 +17,4 @@ public class AccountsPage extends AppNavBar {
         pageTools =new PageTools();
         tablePage=new TablePage();
     }
-
 }

@@ -105,5 +105,4 @@ public class NewLeadPage {
         saveButton.click();
         return new LeadPage();
     }
-
 }

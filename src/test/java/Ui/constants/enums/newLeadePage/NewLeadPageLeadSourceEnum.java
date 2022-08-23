@@ -4,6 +4,7 @@ package Ui.constants.enums.newLeadePage;
  *enum names of dropdown fields "LeadSource"
  */
 public enum NewLeadPageLeadSourceEnum implements NewLeadPageDropdownEnumInterface {
+
     NONE("--None--"),
     WEB("Web"),
     PHONE_INDUSTRY("Phone Inquiry"),

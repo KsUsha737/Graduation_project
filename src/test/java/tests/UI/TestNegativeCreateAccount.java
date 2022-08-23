@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 import java.io.FileNotFoundException;
 
 public class TestNegativeCreateAccount extends BaseTest{
+
     @Test(description = "recreating an existing account", retryAnalyzer = Retry.class)
     public void negativeCreateAccount() throws FileNotFoundException{
         NewAccountJsonReader reader = new NewAccountJsonReader();

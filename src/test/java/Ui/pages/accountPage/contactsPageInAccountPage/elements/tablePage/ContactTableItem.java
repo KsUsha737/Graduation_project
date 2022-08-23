@@ -11,7 +11,6 @@ import org.openqa.selenium.By;
 @Getter
 public class ContactTableItem {
 
-
     private int index;
     private Link contactName;
     private String title;
@@ -48,5 +47,4 @@ public class ContactTableItem {
         contactName.click();
         return new ContactPageInAccountPage();
     }
-
 }

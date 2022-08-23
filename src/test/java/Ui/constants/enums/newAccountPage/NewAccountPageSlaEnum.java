@@ -4,6 +4,7 @@ package Ui.constants.enums.newAccountPage;
  * enum names of dropdown fields "Sla" on NewAccountPage
  */
 public enum NewAccountPageSlaEnum implements NewAccountPageDropdownEnumInterface{
+
     NONE("--None--"),
     GOLD("Gold"),
     Silver("Silver") ,
@@ -19,5 +20,4 @@ public enum NewAccountPageSlaEnum implements NewAccountPageDropdownEnumInterface
     public String toString() {
         return text;
     }
-
 }

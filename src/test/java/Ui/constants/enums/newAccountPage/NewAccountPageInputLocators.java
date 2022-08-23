@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
  * enum fields for entering NewAccountPage data found by locator
  */
 public enum NewAccountPageInputLocators {
+
     ACCOUNT_NAME("Account Name"),
     PHONE("Phone"),
     FAX("Fax"),
@@ -39,5 +40,4 @@ public enum NewAccountPageInputLocators {
     public By getLocator(){
         return this.locator;
     }
-
 }

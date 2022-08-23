@@ -87,5 +87,4 @@ public class NewLead {
     @Expose
     @SerializedName("Primary")
     private NewLeadPagePrimaryEnum primary;
-
 }

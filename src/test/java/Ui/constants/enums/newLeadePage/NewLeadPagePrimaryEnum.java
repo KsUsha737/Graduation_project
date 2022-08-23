@@ -4,6 +4,7 @@ package Ui.constants.enums.newLeadePage;
  * enum names of dropdown fields "Primary"
  */
 public enum NewLeadPagePrimaryEnum implements NewLeadPageDropdownEnumInterface{
+
     NONE("--None--"),
     NO("No"),
     YES("Yes");

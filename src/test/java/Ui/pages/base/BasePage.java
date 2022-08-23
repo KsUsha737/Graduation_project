@@ -23,7 +23,4 @@ public class BasePage extends AppNavBar {
         goToApp(AppsEnum.SALES);
         return new SalesPage();
     }
-
-    //Здесь можно добавлять методы для перехода к другим приложениям APPS из AppsEnum*
-
 }

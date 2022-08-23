@@ -4,7 +4,8 @@ package Ui.constants.enums.newAccountPage;
  * enum names of dropdown fields "Rating" on NewAccountPage
  */
 public enum NewAccountPageRatingEnum implements NewAccountPageDropdownEnumInterface {
-       NONE("--None--"),
+
+    NONE("--None--"),
     HOT("Hot"),
     WARM("Warm"),
     COLD("Cold");

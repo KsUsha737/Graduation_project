@@ -4,6 +4,7 @@ package Ui.constants.enums.newLeadePage;
  * enum names of dropdown fields "LeadStatus"
  */
 public enum NewLeadPageLeadStatusEnum implements NewLeadPageDropdownEnumInterface{
+
     NONE("--None--"),
     OPEN_NOT_CONTACTED("Open - Not Contacted"),
     WORKING_CONTACTED("Working - Contacted"),

@@ -4,14 +4,11 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import lombok.*;
 
-import java.util.List;
-
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 @Builder
 public class LeadResponse {
-
     @Expose
     @SerializedName("attributes")
     private LeadInfoAttributes attributes;
@@ -75,5 +72,4 @@ public class LeadResponse {
     @Expose
     @SerializedName("Website")
     private String website;
-
 }
