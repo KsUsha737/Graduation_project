@@ -11,6 +11,7 @@ import org.openqa.selenium.By;
 @Log4j2
 @Getter
 public class PageTool {
+
     private final SelenideElement link;
     private final String text;
 

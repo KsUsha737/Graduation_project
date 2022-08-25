@@ -1,11 +1,9 @@
 package Ui.pages.base;
 
-import Ui.conctants.enums.AppsEnum;
+import Ui.constants.enums.AppsEnum;
 import Ui.pages.AppNavBar;
 import Ui.pages.SalesPage;
-import lombok.extern.log4j.Log4j2;
 import org.openqa.selenium.By;
-import org.testng.annotations.Listeners;
 
 import static com.codeborne.selenide.Selenide.$;
 
@@ -25,7 +23,4 @@ public class BasePage extends AppNavBar {
         goToApp(AppsEnum.SALES);
         return new SalesPage();
     }
-
-    //Здесь можно добавлять методы для перехода к другим приложениям APPS из AppsEnum*
-
 }

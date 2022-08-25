@@ -7,10 +7,11 @@ import io.qameta.allure.Step;
 import java.io.FileNotFoundException;
 
 public class AccountPageActionsSteps {
+
     private AccountPageActions accountPageActions;
     private DetailsFormPage detailsFormPage;
 
-@Step("go To Details Form Page in Account Page")
+    @Step("go To Details Form Page in Account Page")
     public AccountPageActionsSteps goToDetailsFormPage() throws FileNotFoundException {
        detailsFormPage= accountPageActions.goToDetailsFormPage();
         return this;
@@ -21,4 +22,5 @@ public class AccountPageActionsSteps {
     accountPageActions.goNewsForm();
     return this;
     }
+
 }

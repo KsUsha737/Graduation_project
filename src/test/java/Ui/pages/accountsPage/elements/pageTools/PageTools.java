@@ -1,6 +1,6 @@
 package Ui.pages.accountsPage.elements.pageTools;
 
-import Ui.conctants.enums.accountsPage.PageToolEnum;
+import Ui.constants.enums.accountsPage.PageToolEnum;
 import Ui.pages.newAccountPage.NewAccountPage;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
@@ -16,6 +16,7 @@ import static com.codeborne.selenide.Selenide.$$;
  * created a list of right menu buttons ("New" and "Import", etc.)
  */
 public class PageTools {
+
     private List<PageTool> pageTools;
 
     public PageTools() {
@@ -39,5 +40,4 @@ public class PageTools {
         }
         return newAccountPage;
     }
-
 }

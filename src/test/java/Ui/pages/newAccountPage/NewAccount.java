@@ -1,6 +1,6 @@
 package Ui.pages.newAccountPage;
 
-import Ui.conctants.enums.newAccountPage.*;
+import Ui.constants.enums.newAccountPage.*;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import lombok.*;

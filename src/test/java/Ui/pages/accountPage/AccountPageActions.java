@@ -16,6 +16,7 @@ import static com.codeborne.selenide.Selenide.$;
  */
 @Log4j2
 public class AccountPageActions extends AppNavBar {
+
     private SelenideElement detailsLink;
     private SelenideElement relatedLink;
     private SelenideElement newsLink;
@@ -68,6 +69,4 @@ public class AccountPageActions extends AppNavBar {
     public AccountPage back(){
         return new AccountPage();
     }
-
 }
-

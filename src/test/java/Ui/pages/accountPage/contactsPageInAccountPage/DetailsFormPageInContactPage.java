@@ -1,6 +1,6 @@
 package Ui.pages.accountPage.contactsPageInAccountPage;
 
-import Ui.conctants.enums.newContactPageInAccountpage.InputEnum;
+import Ui.constants.enums.newContactPageInAccountpage.InputEnum;
 import Ui.wrapers.Button;
 import Ui.wrapers.Input;
 import lombok.Getter;
@@ -11,6 +11,7 @@ import org.openqa.selenium.By;
  */
 @Getter
 public class DetailsFormPageInContactPage {
+
     private final Input phone;
     private final Input homePhone;
     private final Input mobile;

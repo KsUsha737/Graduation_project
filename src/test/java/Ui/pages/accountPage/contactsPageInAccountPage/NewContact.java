@@ -1,8 +1,8 @@
 package Ui.pages.accountPage.contactsPageInAccountPage;
 
-import Ui.conctants.enums.newContactPageInAccountpage.LeadSourceEnum;
-import Ui.conctants.enums.newContactPageInAccountpage.LevelEnum;
-import Ui.conctants.enums.newContactPageInAccountpage.SalutationEnum;
+import Ui.constants.enums.newContactPageInAccountpage.LeadSourceEnum;
+import Ui.constants.enums.newContactPageInAccountpage.LevelEnum;
+import Ui.constants.enums.newContactPageInAccountpage.SalutationEnum;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import lombok.*;
@@ -89,6 +89,4 @@ public class NewContact {
     private LevelEnum level;
 
     private String FullName;
-
-
 }

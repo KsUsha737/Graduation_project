@@ -1,6 +1,6 @@
 package Ui.pages.accountPage.contactsPageInAccountPage.elements.pageTools;
 
-import Ui.conctants.enums.newContactPageInAccountpage.PageToolEnum;
+import Ui.constants.enums.newContactPageInAccountpage.PageToolEnum;
 import Ui.pages.accountPage.contactsPageInAccountPage.NewContactPageCreateInAccountPage;
 import Ui.pages.accountsPage.elements.pageTools.PageTool;
 
@@ -21,6 +21,7 @@ import static com.codeborne.selenide.Selenide.$$;
  * valid for all AppNavBar pages
  */
 public class PageTools {
+
     private List<PageTool> pageTools;
 
     public PageTools() {
@@ -44,5 +45,4 @@ public class PageTools {
         }
         return new NewContactPageCreateInAccountPage();
     }
-
 }

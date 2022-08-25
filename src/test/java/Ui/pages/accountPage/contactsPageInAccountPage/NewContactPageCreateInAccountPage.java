@@ -1,8 +1,8 @@
 package Ui.pages.accountPage.contactsPageInAccountPage;
 
 
-import Ui.conctants.enums.newContactPageInAccountpage.InputEnum;
-import Ui.conctants.enums.newContactPageInAccountpage.NewContactPageInAccountPageDropDownLocators;
+import Ui.constants.enums.newContactPageInAccountpage.InputEnum;
+import Ui.constants.enums.newContactPageInAccountpage.NewContactPageInAccountPageDropDownLocators;
 import Ui.wrapers.Button;
 import Ui.wrapers.Input;
 import io.qameta.allure.Step;
@@ -131,10 +131,7 @@ public class NewContactPageCreateInAccountPage {
         lead_Source.select(newContact.getLeadSource());
         level.select(newContact.getLevel());
 
-
-
         saveButton.click();
         return new ContactsPageInAccountPage();
     }
-
 }

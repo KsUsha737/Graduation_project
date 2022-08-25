@@ -1,11 +1,9 @@
 package Ui.pages.accountsPage.elements.pageTools;
 
-import Ui.wrapers.Button;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import lombok.Getter;
 import lombok.extern.log4j.Log4j2;
-import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.By;
 
 /**
@@ -14,6 +12,7 @@ import org.openqa.selenium.By;
 @Log4j2
 @Getter
 public class PageTool {
+
     private final SelenideElement link;
     private final String text;
 

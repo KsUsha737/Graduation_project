@@ -17,6 +17,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 @Log4j2
 public class AppNavBar {
+
     private List<NavItem> navItems;
 
     public AppNavBar() {
@@ -50,7 +51,6 @@ public class AppNavBar {
         }
 
         return new AccountsPage();
-
     }
 
     @Step("Go to contacts page")
@@ -76,5 +76,4 @@ public class AppNavBar {
         }
         return new LeadsPage();
     }
-
 }

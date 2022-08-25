@@ -1,7 +1,7 @@
 package Ui.pages.accountPage;
 
-import Ui.conctants.enums.newAccountPage.NewAccountPageEnumDropDownLocators;
-import Ui.conctants.enums.newAccountPage.NewAccountPageInputLocators;
+import Ui.constants.enums.newAccountPage.NewAccountPageEnumDropDownLocators;
+import Ui.constants.enums.newAccountPage.NewAccountPageInputLocators;
 import Ui.pages.newAccountPage.DropDown;
 import Ui.wrapers.Button;
 import Ui.wrapers.Input;
@@ -10,6 +10,7 @@ import org.openqa.selenium.By;
 
 @Getter
 public class DetailsFormPage {
+
     private final Input accountName;
     private final Input phone;
     private final Input fax;
@@ -84,5 +85,4 @@ public class DetailsFormPage {
         saveButton.click();
         return new AccountPageActions();
     }
-
 }

@@ -1,7 +1,7 @@
 package Ui.pages.accountPage.contactsPageInAccountPage;
 
-import Ui.conctants.enums.newContactPageInAccountpage.NewContactPageInAccountPageDropDownLocators;
-import Ui.conctants.enums.newContactPageInAccountpage.PageDropDownEnumInterface;
+import Ui.constants.enums.newContactPageInAccountpage.NewContactPageInAccountPageDropDownLocators;
+import Ui.constants.enums.newContactPageInAccountpage.PageDropDownEnumInterface;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
@@ -13,6 +13,7 @@ import static com.codeborne.selenide.Selenide.$;
  * field selection via Enum
  */
 public class DropDown {
+
     private final SelenideElement dropDown;
 
     public DropDown(NewContactPageInAccountPageDropDownLocators newContactPageInAccountPageDropDownLocators) {

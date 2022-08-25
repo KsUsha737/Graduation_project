@@ -1,9 +1,8 @@
 package Ui.pages.newLeadPage;
 
-import Ui.conctants.enums.newLeadePage.NewLeadPageEnumDropDownLocators;
-import Ui.conctants.enums.newLeadePage.NewLeadPageInputLocatorsEnum;
+import Ui.constants.enums.newLeadePage.NewLeadPageEnumDropDownLocators;
+import Ui.constants.enums.newLeadePage.NewLeadPageInputLocatorsEnum;
 import Ui.pages.LeadPage;
-import Ui.pages.leadsPage.LeadsPage;
 import Ui.wrapers.Button;
 import Ui.wrapers.Input;
 import io.qameta.allure.Step;
@@ -106,5 +105,4 @@ public class NewLeadPage {
         saveButton.click();
         return new LeadPage();
     }
-
 }
