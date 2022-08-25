@@ -4,9 +4,10 @@ import API.base.BaseApi;
 import API.dto.*;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
+import lombok.extern.log4j.Log4j2;
 import utils.PropertiesKeys;
 import utils.PropertyReader;
-
+@Log4j2
 public class LeadClientApi extends BaseApi {
     @Step("create Lead")
     public String createLead(Lead lead) {

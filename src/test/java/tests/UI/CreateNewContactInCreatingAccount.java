@@ -7,12 +7,22 @@ import Ui.pages.accountPage.contactsPageInAccountPage.NewContactJsonReader;
 import Ui.pages.accountPage.contactsPageInAccountPage.elements.tablePage.ContactTableItem;
 import Ui.pages.newAccountPage.NewAccount;
 import Ui.pages.newAccountPage.NewAccountJsonReader;
+import lombok.extern.log4j.Log4j2;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.FileNotFoundException;
-
+@Log4j2
 public class CreateNewContactInCreatingAccount extends BaseTest {
+
+    @Test
+    public void tst(){
+        System.out.println("----------------------------------------");
+        System.out.println("----------------------------------------");
+        System.out.println("----------------------------------------");
+        log.error("error from logger");
+        System.out.println("----------------------------------------");
+    }
 
     @Test(description = "creating contact in account",retryAnalyzer = Retry.class)
     public void CreateNewContactInCreatingAccount() throws FileNotFoundException {
